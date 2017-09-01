@@ -1,0 +1,244 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "void setup()\n{\n  size(400,400);\nframeRate (30);\n}\n \n//beak variables\nint topBeakY = -10;\nint botBeakY = -10;\nint bx = 30;\nint by = -10;\n \nvoid draw ()\n{\n   background (3,3,3);\n   body (0,0);\n   head (30,-10);\n    //beak\n   stroke (3,3,3);\n   fill (247,229,90);\n   triangle (bx+21,by+100,bx+25,by+85,bx-10,topBeakY+100);\n   triangle (bx+21,by+100,bx+25,by+115,bx-10,botBeakY+100);\n    topBeakY = topBeakY-1;\n       if(topBeakY<-30)\n        {\n          topBeakY = -10;\n        }\n    botBeakY = botBeakY +1;\n       if (botBeakY>10)\n        {\n          botBeakY = -10;\n        }\n    //text\n   fill (255,255,255);\n   textSize (25);\n   text (\"Go Cardinals!\",110,370);\n}\n \nvoid head (int hx,int hy)\n{\n    //head\n   stroke (173,34,30);\n   fill (173,34,30);\n   ellipse (hx+80,hy+100,120,100);\n    //head tuft\n   triangle (hx+26,hy+73,hx+97,hy+13,hx+124,hy+65);\n    //eye socket\n   stroke (3,3,3);\n   fill (3,3,3);\n   ellipse (hx+30,hy+100,15,60);\n   ellipse (hx+40,hy+90,40,25);\n   triangle (hx+42,hy+83,hx+60,hy+93,hx+38,hy+108);\n    //eye\n   fill (255,255,255);\n   ellipse (hx+30,hy+90,4,8);\n}\n \nvoid body (int bx,int by)\n{\n    //left leg\n   fill (183,147,30);\n   rect (bx+130,by+200,10,80);\n   triangle (bx+131,by+280,bx+140,by+280,bx+160,by+290);\n   triangle (bx+131,by+280,bx+140,by+280,bx+145,by+290);\n   triangle (bx+131,by+280,bx+140,by+280,bx+110,by+290);\n    //body\n   stroke (137,12,10);\n   fill (137,12,10);\n   arc(bx+200,by+150,250,180,PI/8,10*PI/8,PIE);\n   stroke (3,3,3);\n   fill (3,3,3);\n   triangle (bx+245,by+165,bx+300,by+205,bx+320,by+184);\n    //right leg\n   fill (183,147,30);\n   rect (bx+180,by+230,10,80);\n   triangle (bx+181,by+310,bx+190,by+310,bx+210,by+320);\n   triangle (bx+181,by+310,bx+190,by+310,bx+195,by+320);\n   triangle (bx+181,by+310,bx+190,by+310,bx+160,by+320);\n    //wing\n   fill (170,42,39);\n   stroke (108,20,19);\n   line (bx+140,by+100, bx+405,by+270);\n   triangle (bx+140,by+100,bx+170,by+205,bx+405,by+270);\n   fill (198,33,30);\n   bezier(bx+140,by+100, bx+170,by+270,bx+170,by+170,bx+405,by+270);\n   fill (224,26,23);\n   arc (bx+180,by+165,200,110,11*PI/8, 17*PI/8, PIE);\n}",
+			"settings":
+			{
+				"buffer_size": 2110,
+				"line_ending": "Windows",
+				"name": "void setup()"
+			}
+		}
+	],
+	"build_system": "Packages/Processing/Build Systems/Processing.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					""
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Re-run sketch"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch (Processing 3 only)"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch fullscreen"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Export sketch as application"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Kill running sketches"
+				]
+			],
+			[
+				"Packages/Processing/Build Systems/Processing.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1802,
+								1802
+							]
+						],
+						"settings":
+						{
+							"auto_name": "void setup()",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Processing/Build Systems/Processing.sublime-build",
+	"project": "Original_Design_Assignment_Final.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
